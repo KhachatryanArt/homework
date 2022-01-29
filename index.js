@@ -242,8 +242,18 @@
 
 // 2.38
 
-//////
+// let count = 1;
+// let number = +prompt("Enter the number: ");
 
+// // for (let i = 1; i <= number; i++) {
+// //   count *= i;
+// // }
+
+// for (let i = 1; i <= number; i++) {
+//   let e = 1 / i;
+//   count += e;
+// }
+// document.write(count);
 // 2.40
 
 // let count = 0;
@@ -278,7 +288,7 @@
 // }
 // document.write("Product of odd integers = " + sum)
 
-// 2.46
+// 2.47
 
 // for (let i = 1; i <= 10; i++) {
 //   for (let j = 1; j <= 10; j++) {
@@ -492,6 +502,42 @@
 
 // document.write(box(number_1));
 
+// 3.25
+
+// let a = 25848;
+// let b = 24;
+// function number(a, b) {
+//   document.write(a / b - (a % b) / b + "<br>");
+//   document.write((a % b) / b);
+//   a = a*10 + b%10
+// }
+
+// function number(a) {
+//   if (a >= 10000) {
+//     let c = a / 10000 - (a % 10000) / 10000;
+//     document.write(c + "__");
+//     a = a % 10000;
+//   }
+//   if (a >= 1000) {
+//     let c = a / 1000 - (a % 1000) / 1000;
+//     document.write(c + "__");
+//     a = a % 1000;
+//   }
+//   if (a >= 100) {
+//     let c = a / 100 - (a % 100) / 100;
+//     document.write(c + "__");
+//     a = a % 100;
+//   }
+//   if (a >= 10) {
+//     let c = a / 10 - (a % 10) / 10;
+//     document.write(c + "__");
+//     a = a % 10;
+//   }
+//   document.write(a);
+// }
+
+// number(a);
+
 // 3.26
 
 // function time(hour, minute, second) {
@@ -583,7 +629,55 @@
 // }
 
 // document.write(revers(number))
+// 3.25
 
+// function gcd1(a,b) {
+//   if (a == b) return a;
+
+//   while (b != 0 || a != 0) {
+//     if (b != 0) {
+//       a %= b;
+//     } else return a;
+
+//     if (a != 0) {
+//       b %= a;
+//     } else return b;
+//   }
+// }
+// document.write(gcd1(64,30))
+// 3.33
+
+// function qualityPoint() {
+//   let sum = 0;
+//   let count = 0;
+//   let number = 0;
+//   //   const number = +prompt("Enter the point and enter the -1 for answer:");
+//   do {
+//     number = +prompt("Enter the point and enter the -1 for answer:");
+//     sum += number;
+//     count += 1;
+//   } while (number != -1);
+//   document.write(sum + "<br>");
+//   document.write(count + "<br>");
+//   let quality = sum / count;
+//   document.write(quality + "<br>");
+//   if (60 <= quality && quality < 70) {
+//     document.write("1");
+//   }
+//   if (70 <= quality && quality <= 80) {
+//     document.write("2");
+//   }
+//   if (80 <= quality && quality < 90) {
+//     document.write("3");
+//   }
+//   if (90 <= quality && quality <= 100) {
+//     document.write("4");
+//   }
+//   if (quality < 60) {
+//     document.write("0");
+//   }
+// }
+// qualityPoint();
 // // 3.35
 
 // let num1 = Math.floor(Math.random() * 11);
